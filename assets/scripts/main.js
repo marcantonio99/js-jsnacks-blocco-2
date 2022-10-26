@@ -17,11 +17,24 @@ console.log(names);
 
 const fullNames = [];
 
-let nameRandom = Math.floor(Math.random() * names.leght);
-let surnameRandom = Math.floor(Math.random() * surnames.leght);
-
-console.log(`il tuo random: ${names[nameRandom]} ${surnames[surnameRandom]}`);
-
 for ( let i = 0; i < surnames.length; i++ ){
+    let nameRandom = Math.floor(Math.random() * names.leght);
+    let surnameRandom = Math.floor(Math.random() * surnames.leght);
+    console.log(`il tuo random: ${names[nameRandom]} ${surnames[surnameRandom]}`);
 
+    fullNames.push( `${names[nameRandom]} ${surnames[surnameRandom]}`);
 }
+console.log(fullNames)
+
+
+//Crea un array di numeri interi e fai la somma di tutti gli elementi in posizione dispari:
+
+let numeri = [5,6,7,12,16,354];
+let sum = 0;
+
+for( let i = 0; i < numeri.leght; i++ ){
+    if( i % 2 !== 0 ){
+        sum = sum + numeri[i];
+    }
+}
+console.log(sum)
